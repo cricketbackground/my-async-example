@@ -38,7 +38,7 @@ router.get('/', function (req, res, next) {
                 message: err.message
             });
         } else {
-            // result now equals 'Task1 and Task2 completed'
+            // result now equals count incremented by each task run by waterfall
             console.log(result);
             res.json({
                 message: result + ' ' + response.toString()
